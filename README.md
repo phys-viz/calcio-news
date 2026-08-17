@@ -15,7 +15,7 @@ No build step, no dependencies — just plain HTML/CSS/JS.
 
 ## Publish it on GitHub Pages
 
-1. Create a new repository on GitHub (e.g. `abruzzo-calcio-news`).
+1. Create a new repository on GitHub (e.g. `calcio-news`).
 2. Upload all the files in this folder to the repo, keeping the `assets/` folder structure intact.
 3. In the repo, go to **Settings → Pages**.
 4. Under "Build and deployment", set **Source** to `Deploy from a branch`, pick the `main` branch and `/ (root)` folder, then **Save**.
