@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it" translate="no">
+<head>
+<meta name="google" content="notranslate">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Archivio / Archive | Abruzzo Calcio News</title>
+<meta name="description" content="Notizie meno recenti su Chieti FC e Pescara Calcio, archiviate per settimana.">
+<link rel="stylesheet" href="assets/style.css?v=4">
+</head>
+<body>
+
+<header class="site-header">
+  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Abruzzo.svg?width=200" alt="" class="header-map" onerror="this.remove()">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-badge">⚽</span>
+      <span class="logo-text">Abruzzo Calcio News</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="chieti.html" class="nav-link"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chietifc1922.png" alt="" class="nav-crest" onerror="this.remove()">Chieti FC</a>
+      <a href="pescara.html" class="nav-link"><img src="assets/pescara-badge.svg" alt="" class="nav-crest">Pescara Calcio</a>
+      <a href="standings.html" class="nav-link">Classifiche / Standings</a>
+      <a href="archive.html" class="nav-link active">Archivio / Archive</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="page-intro">
+    <h1>Archivio / Archive</h1>
+    <p>Notizie meno recenti, organizzate per settimana. Le notizie delle ultime due settimane restano sulla home e sulle pagine delle squadre.<br>
+    Older stories, organized by week. The last two weeks of news stay on the home and team pages.</p>
+  </section>
+
+  <section class="filters" aria-label="Filtra notizie per squadra">
+    <button class="filter-btn active" data-filter="all">Tutte le notizie</button>
+    <button class="filter-btn" data-filter="chieti">Chieti FC</button>
+    <button class="filter-btn" data-filter="pescara">Pescara Calcio</button>
+  </section>
+
+  <!--
+    ARCHIVE STRUCTURE FOR FUTURE UPDATES:
+    Wrap each week's stories in a block like this, newest week first:
+
+    <section class="archive-week">
+      <h2 class="archive-week-title">Settimana dell'11 – 17 agosto 2026 / Week of Aug 11–17, 2026</h2>
+      <div class="news-feed">
+        ... <article class="news-card" data-team="..."> blocks, same format as index.html ...
+      </div>
+    </section>
+
+    Move an article here (from index.html / chieti.html / pescara.html) once it's more than
+    ~2 weeks old, grouping it under the Mon–Sun week it was originally posted in.
+  -->
+
+  <div class="archive-empty" id="archive-empty">
+    <p>Non ci sono ancora notizie archiviate — tutte le notizie pubblicate finora rientrano nelle ultime due settimane e si trovano sulla home.<br>
+    No archived stories yet — everything published so far falls within the last two weeks and lives on the homepage.</p>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Sito informativo non ufficiale, creato con notizie raccolte da fonti giornalistiche locali. Ogni articolo riporta il link alla fonte originale.<br>
+    Unofficial fan news site, built from local sports-journalism sources. Every article links back to its original source.</p>
+    <p class="footer-updated">Ultimo aggiornamento / Last updated: <strong>17 agosto 2026</strong></p>
+    <p class="footer-credit">Stemma Chieti F.C. 1922 di Chieti F.C. 1922 a r.l., <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Chietifc1922.png" target="_blank" rel="noopener">Wikimedia Commons</a>.</p>
+    <p class="footer-credit">Bandiera della regione Abruzzo via <a href="https://commons.wikimedia.org/wiki/File:Flag_of_Abruzzo.svg" target="_blank" rel="noopener">Wikimedia Commons</a> (licensing not yet independently verified — check before relying on this).</p>
+  </div>
+</footer>
+
+<script src="assets/script.js?v=4"></script>
+</body>
+</html>

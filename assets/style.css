@@ -354,3 +354,26 @@ body.pescara-page {
     rgba(255, 255, 255, 0.9) 52px
   );
 }
+
+.archive-week {
+  margin-bottom: 34px;
+}
+
+.archive-week-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 8px;
+  margin: 0 0 18px;
+}
+
+.archive-empty {
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  padding: 28px 24px;
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.95rem;
+  margin-bottom: 40px;
+}
