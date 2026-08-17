@@ -27,12 +27,31 @@ body {
 }
 
 .site-header {
-  background: linear-gradient(90deg, var(--chieti), var(--pescara));
+  background: linear-gradient(90deg, var(--chieti) 0%, #eef7f1 50%, var(--pescara) 100%);
   color: #fff;
   position: sticky;
   top: 0;
   z-index: 10;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.header-map {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  height: 140%;
+  width: auto;
+  opacity: 0.16;
+  filter: brightness(0) invert(1);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.logo, .main-nav, .nav-link, .logo-text {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
 }
 
 .header-inner {
@@ -317,10 +336,10 @@ body.chieti-page {
   background-color: var(--bg);
   background-image: repeating-linear-gradient(
     135deg,
-    rgba(27, 94, 58, 0.14) 0px,
-    rgba(27, 94, 58, 0.14) 26px,
-    rgba(20, 22, 26, 0.09) 26px,
-    rgba(20, 22, 26, 0.09) 52px
+    rgba(27, 94, 58, 0.28) 0px,
+    rgba(27, 94, 58, 0.28) 26px,
+    rgba(20, 22, 26, 0.16) 26px,
+    rgba(20, 22, 26, 0.16) 52px
   );
 }
 
