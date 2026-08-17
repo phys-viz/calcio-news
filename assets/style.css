@@ -1,12 +1,13 @@
 :root {
-  --chieti: #b7202e;
-  --pescara: #1c3f94;
+  --chieti: #1b5e3a;       /* neroverde: Chieti FC's official green */
+  --chieti-dark: #14161a;  /* neroverde: Chieti FC's official black */
+  --pescara: #0d7dc4;      /* biancazzurro: Pescara's official sky blue */
   --ink: #1a1a1a;
   --muted: #6b6b6b;
   --bg: #f7f6f3;
   --card-bg: #ffffff;
   --border: #e4e1d9;
-  --accent: #0f7a4d;
+  --accent: #b8860b;       /* neutral site accent, distinct from both club colors */
 }
 
 * { box-sizing: border-box; }
@@ -62,6 +63,9 @@ body {
 }
 
 .nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   color: #fff;
   text-decoration: none;
   padding: 8px 12px;
@@ -70,6 +74,15 @@ body {
   font-weight: 600;
   opacity: 0.85;
   transition: background 0.15s, opacity 0.15s;
+}
+
+.nav-crest {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1px;
 }
 
 .nav-link:hover { background: rgba(255,255,255,0.15); opacity: 1; }
@@ -153,7 +166,7 @@ body {
   border-bottom: 1px dashed var(--accent);
 }
 
-.news-date:hover { color: #0a5b39; }
+.news-date:hover { color: #8a6508; }
 
 .team-tag {
   font-size: 0.72rem;
@@ -165,11 +178,20 @@ body {
   color: #fff;
 }
 
-.team-chieti { background: var(--chieti); }
-.team-pescara { background: var(--pescara); }
+/* Chieti FC's official colors are neroverde (black + green) */
+.team-chieti { background: var(--chieti); box-shadow: inset 0 -2px 0 var(--chieti-dark); }
+/* Pescara's official colors are biancazzurro (white + sky blue) */
+.team-pescara { background: var(--pescara); box-shadow: inset 0 -2px 0 #ffffff; }
 
 .news-title {
   font-size: 1.15rem;
+  margin: 0 0 4px;
+}
+
+.news-title-en {
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--muted);
   margin: 0 0 14px;
 }
 
