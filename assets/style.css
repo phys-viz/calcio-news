@@ -77,12 +77,12 @@ body {
 }
 
 .nav-crest {
-  width: 18px;
-  height: 18px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
-  border-radius: 3px;
+  border-radius: 5px;
   background: rgba(255, 255, 255, 0.9);
-  padding: 1px;
+  padding: 2px;
 }
 
 .nav-link:hover { background: rgba(255,255,255,0.15); opacity: 1; }
@@ -305,7 +305,32 @@ body {
 }
 
 .footer-updated { margin-top: 8px; font-size: 0.78rem; }
+.footer-credit { margin-top: 4px; font-size: 0.72rem; }
+.footer-credit a { color: var(--muted); }
 
 @media (min-width: 640px) {
   .news-lang { grid-template-columns: 1fr 1fr; }
+}
+
+/* Subtle team-color diagonal stripes on each club's dedicated page */
+body.chieti-page {
+  background-color: var(--bg);
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(27, 94, 58, 0.07) 0px,
+    rgba(27, 94, 58, 0.07) 26px,
+    rgba(20, 22, 26, 0.045) 26px,
+    rgba(20, 22, 26, 0.045) 52px
+  );
+}
+
+body.pescara-page {
+  background-color: var(--bg);
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(13, 125, 196, 0.08) 0px,
+    rgba(13, 125, 196, 0.08) 26px,
+    rgba(255, 255, 255, 0.9) 26px,
+    rgba(255, 255, 255, 0.9) 52px
+  );
 }
